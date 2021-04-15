@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<%= render @contact %>
+
+<div>
+  <%= link_to "Edit this contact", edit_contact_path(@contact) %> |
+  <%= link_to "Back to contacts", contacts_path %>
+
+  <%= button_to "Destroy this contact", contact_path(@contact), method: :delete %>
+</div>

@@ -1,0 +1,9 @@
+<h1>New post</h1>
+
+<%= render "form", conversation: @conversation, post: @post %>
+
+<br>
+
+<div>
+  <%= link_to "Back to conversation", conversation_path(@conversation) %>
+</div>

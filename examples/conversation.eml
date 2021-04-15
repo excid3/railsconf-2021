@@ -1,0 +1,27 @@
+MIME-Version: 1.0
+Date: Thu, 18 Mar 2021 15:23:20 -0500
+Message-ID: <CAAXaCdnizMzT0YEZ8TCqvXy7Acbq1he8E=Myq4UAHNiqT4bD1g@mail.gmail.com>
+Subject: Hello world
+From: Chris Oliver <chris@gorails.com>
+To: Application <conversations@example.com>
+Content-Type: multipart/related; boundary="000000000000e4316405bdd55e38"
+
+--000000000000e4316405bdd55e38
+Content-Type: multipart/alternative; boundary="000000000000e4316205bdd55e37"
+
+--000000000000e4316205bdd55e37
+Content-Type: text/plain; charset="UTF-8"
+
+Hello world.
+
+[image: logo.png]
+
+Thanks,
+Chris
+
+--000000000000e4316205bdd55e37
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr"><div>Hello world. 👋</div><div><br></div>Thanks,<br><div>Chris</div></div>
+
+--000000000000e4316205bdd55e37--

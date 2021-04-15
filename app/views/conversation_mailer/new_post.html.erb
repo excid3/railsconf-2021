@@ -1,0 +1,3 @@
+<%= params[:post].author.name %> replied to <%= @conversation.subject %>
+
+<%= link_to "Read message", conversation_url(@conversation, anchor: params[:post].id) %>

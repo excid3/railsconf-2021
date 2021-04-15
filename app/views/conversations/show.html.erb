@@ -1,0 +1,19 @@
+<%= turbo_stream_from @conversation %>
+<%= render @conversation %>
+
+<div>
+  <%= link_to "Edit this conversation", edit_conversation_path(@conversation) %> |
+  <%= link_to "Back to conversations", conversations_path %>
+
+  <%= button_to "Destroy this conversation", conversation_path(@conversation), method: :delete %>
+</div>
+
+<h3>Messages</h3>
+<div id="posts">
+  <%= render @conversation.posts %>
+</div>
+
+<h3>Reply</h3>
+<%= render "posts/form", conversation: @conversation, post: Post.new %>
+
+<%= link_to "Inbound email", new_rails_conductor_inbound_email_path(from: "Test User <test@example.com>", to: "conversation-#{@conversation.to_param}@example.com", subject: "RE: #{@conversation.subject}"), target: :_blank %>
